@@ -7,10 +7,11 @@
 This will generate the data of ATM transactions as a json ("data_generation/data.json").
 
 ## RUN KAFKA
-In your kafka/bin run the 2 following commands:
-  ./zookeeper-server-start.sh ../config/zookeeper.properties
-  ./kafka-server-start.sh ../config/server.properties
-  kafka-topics.sh --bootstrap-server localhost:9092 --topic numtest --create --partitions 1 --replication-factor 1
+In your kafka/bin run the following commands:
+./zookeeper-server-start.sh ../config/zookeeper.properties
+./kafka-server-start.sh ../config/server.properties
+kafka-topics.sh --bootstrap-server localhost:9092 --topic numtest --create --partitions 1 --replication-factor 1
+
 Next run the producer and consumer:
   kafka/producer.py
   kafka/consumer.py
