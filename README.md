@@ -32,5 +32,5 @@ Or simply run the analysis.py file without airflow.
 
 The results of the analysis are found in the "data_analysis/df_csvs" folder.
 
-## RUN STREAMLIT
+## RUN STREAMLIT TO VISUALIZE THE ANALYSIS RESULTS
 streamlit run data_analysis/streamlit_analysis.py
