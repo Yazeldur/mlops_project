@@ -7,14 +7,14 @@
 This will generate the data of ATM transactions as a json ("data_generation/data.json").
 
 ## RUN KAFKA
-In your kafka/bin run the following commands:
+### In your kafka/bin run the following commands:
 
 ./zookeeper-server-start.sh ../config/zookeeper.properties
 
 ./kafka-server-start.sh ../config/server.properties
 kafka-topics.sh --bootstrap-server localhost:9092 --topic numtest --create --partitions 1 --replication-factor 1
 
-Next run the producer and consumer:
+### Next run the producer and consumer:
 
 kafka/producer.py
 
@@ -24,6 +24,7 @@ Kafka will store the data read by the consummer as csv in the "atm_csvs" folder 
   
 ## RUN AIRFLOW FOR THE ANALYSIS
 Since I am the one supposed to run airflow and show it with my account, the best we can do for someone else to see that I did implement airflow is by running the following command:
+
 
 sudo spark-submit --total-executor-cores 4 --executor-cores 2 --executor-memory 5g --driver-memory 5g --name analysis_atm data_analysis/analysis.py
 
