@@ -28,7 +28,7 @@ Since I am the one supposed to run airflow and show it with my account, the best
 
 sudo spark-submit --total-executor-cores 4 --executor-cores 2 --executor-memory 5g --driver-memory 5g --name analysis_atm data_analysis/analysis.py
 
-Or simply run the analysis.py without airflow.
+Or simply run the analysis.py file without airflow.
 
 The results of the analysis are found in the "data_analysis/df_csvs" folder.
 
